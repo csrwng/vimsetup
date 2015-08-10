@@ -128,7 +128,7 @@ au BufRead,BufNewFile *.adoc setfiletype asciidoc
 let mapleader = "\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
-" vmap <Leader>y "+y
+vmap <Leader>y "+y
 vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
@@ -138,7 +138,6 @@ nmap <Leader><Leader> V
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
-vmap <Leader>y y:e ~/.clipboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
